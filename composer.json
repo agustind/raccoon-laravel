@@ -1,0 +1,38 @@
+{
+    "name": "raccoon/laravel",
+    "description": "Send Laravel Nightwatch events to Raccoon over HTTPS from processes with no agent next to them, such as Laravel Cloud's managed queue and Vapor.",
+    "keywords": ["laravel", "nightwatch", "monitoring", "queue", "raccoon"],
+    "homepage": "https://raccoon.watch",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "ext-zlib": "*",
+        "illuminate/cache": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "laravel/nightwatch": "^1.30"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Raccoon\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Raccoon\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Raccoon\\Laravel\\RaccoonServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
