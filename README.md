@@ -1,4 +1,4 @@
-# raccoon/laravel
+# raccoonwatch/laravel
 
 Sends Laravel Nightwatch events to [Raccoon](https://raccoon.watch) from processes that have no agent next to them, such as Laravel Cloud's managed queue, Vapor, or worker servers where you can't run `php artisan nightwatch:agent`.
 
@@ -7,7 +7,7 @@ Nightwatch's package hands events to an agent on `127.0.0.1:2407`, and the agent
 ## Install
 
 ```bash
-composer require raccoon/laravel
+composer require raccoonwatch/laravel
 ```
 
 It reads the variables you already set for the agent:
